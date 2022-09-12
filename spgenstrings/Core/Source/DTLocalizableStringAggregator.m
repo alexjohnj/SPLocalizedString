@@ -61,12 +61,6 @@
 	return self;
 }
 
-- (void)dealloc
-{
-	dispatch_release(_tableQueue);
-	dispatch_release(_tableGroup);
-}
-
 - (void)setCustomMacroPrefix:(NSString *)customMacroPrefix
 {
 	if (customMacroPrefix != _customMacroPrefix)
